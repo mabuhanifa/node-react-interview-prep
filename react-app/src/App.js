@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { useStore } from "./context-api/api";
+import useFetch from "./custom-hooks/useFetch";
 
 function App() {
   const [states, setStates] = useState(0);
@@ -8,7 +9,8 @@ function App() {
     state: { value },
     dispatch,
   } = useStore();
-  
+  const {loading,data,error} = useFetch('https://jsonplaceholder.typicode.com/todos');
+  console.log(loading,"   ",data,"   ",error);
   return (
     <div>
       <div>
