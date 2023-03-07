@@ -8,6 +8,7 @@ function App() {
     state: { value },
     dispatch,
   } = useStore();
+  
   return (
     <div>
       <div>
