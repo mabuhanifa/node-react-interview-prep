@@ -1,9 +1,10 @@
 log = console.log;
 const users = [
-  { id: 1, name: "John", isActive: true },
-  { id: 2, name: "Karim", isActive: false },
-  { id: 3, name: "Rahim", isActive: true },
+  { id: 1, name: "John", isActive: true, age: 21 },
+  { id: 2, name: "Karim", isActive: false, age: 25 },
+  { id: 3, name: "Rahim", isActive: true, age: 18 },
 ];
+
 let newUser = [];
 
 /* for loop*/
@@ -19,5 +20,5 @@ let newUser = [];
 
 /* map*/
 const newUser2 = users.map((user) => user.name);
-
+const aged = users.sort((a, b) => b.age - a.age);
 log(newUser2);
