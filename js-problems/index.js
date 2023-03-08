@@ -11,12 +11,13 @@ let newUser = [];
 //   newUser.push(users[i].name)
 // }
 
+/* for each*/
 
-/* for loop*/
+// users.forEach((user) => {
+//   newUser.push(user.name);
+// });
 
-users.forEach(user=>{
-    newUser.push(user.name)
-  })
+/* map*/
+const newUser2 = users.map((user) => user.name);
 
-
-log(newUser);
+log(newUser2);
