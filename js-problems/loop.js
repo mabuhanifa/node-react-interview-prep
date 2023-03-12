@@ -1,0 +1,1 @@
+const string ="lorem ipsum";
