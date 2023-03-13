@@ -27,5 +27,5 @@ const person2 = {
 //apply()
 // console.log(person.fullName.apply(person2,[35,"Sylhet"]));
 
- let fullName = person.fullName.bind(person2,[35,"Sylhet"]);
+ let fullName = person.fullName.bind(person2);
  console.log(fullName);
