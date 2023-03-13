@@ -3,10 +3,12 @@ import { useStore } from "../context-api/api";
 
 export default function Counter() {
   const [states, setStates] = useState(0);
+  
   const {
     state: { value },
     dispatch,
   } = useStore();
+
   return (
     <div>
       <div>
