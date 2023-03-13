@@ -21,7 +21,11 @@ const person2 = {
 };
 
 //call()
+
 // console.log(person.fullName.call(person2));
 
 //apply()
 // console.log(person.fullName.apply(person2,[35,"Sylhet"]));
+
+ let fullName = person.fullName.bind(person2,[35,"Sylhet"]);
+ console.log(fullName);
