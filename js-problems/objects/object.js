@@ -6,5 +6,10 @@ const person = {
   },
 };
 
-console.log(person);
+const person2 = {
+  firstName: "Mary",
+  lastName: "Doe",
+};
 
+//call()
+// console.log(person.fullName.call(person2));
