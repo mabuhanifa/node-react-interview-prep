@@ -6,4 +6,5 @@ const person = {
   },
 };
 
-console.log("object");
+console.log(person);
+

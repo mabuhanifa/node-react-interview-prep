@@ -1,6 +1,7 @@
 import "./App.css";
 import Counter from "./components/Counter";
 import { Create, List } from "./components/Create";
+import Ref from "./components/Ref";
 import useFetch from "./custom-hooks/useFetch";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <Counter/>
     <List/>
     <Create name={"Shourov"}/>
+    <Ref/>
    </div>
   );
 }
