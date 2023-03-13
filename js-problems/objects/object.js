@@ -1,8 +1,17 @@
 const person = {
   firstName: "John",
   lastName: "Doe",
-  fullName: function () {
-    return this.firstName + " " + this.lastName;
+  fullName: function (age=25, city="Dhaka") {
+    return (
+      this.firstName +
+      " " +
+      this.lastName +
+      " from " +
+      city +
+      " and " +
+      age +
+      " years old "
+    );
   },
 };
 
@@ -13,3 +22,6 @@ const person2 = {
 
 //call()
 // console.log(person.fullName.call(person2));
+
+//apply()
+// console.log(person.fullName.apply(person2,[35,"Sylhet"]));
