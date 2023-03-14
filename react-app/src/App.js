@@ -1,5 +1,5 @@
 import "./App.css";
-import Memo from "./hooks/Memo";
+import CallBack from "./hooks/CallBack";
 
 function App() {
   
@@ -11,7 +11,7 @@ function App() {
     <List/>
     <Create name={"Shourov"}/>
     <Ref/> */}
-    <Memo/>
+    <CallBack/>
    </div>
   );
 }
