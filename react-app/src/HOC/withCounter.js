@@ -20,7 +20,7 @@ const withCounter = (OriginalComponent) => {
     }
   }
 
-  return <NewComponent />;
+  return NewComponent;
 };
 
 export default withCounter;
