@@ -1,14 +1,10 @@
 import "./App.css";
-import ClickCounter from "./HOC/ClickCounter";
-import HoverCounter from "./HOC/HoverCounter";
 
 function App() {
-  
   return (
-   <div>
-   < ClickCounter/>
-   <HoverCounter/>
-   </div>
+    <div>
+      
+    </div>
   );
 }
 
