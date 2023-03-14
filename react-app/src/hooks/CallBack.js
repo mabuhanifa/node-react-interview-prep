@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 export default function CallBack() {
   const [number, setNumber] = useState(1);
@@ -10,9 +10,14 @@ export default function CallBack() {
     color: dark ? "white" : "black",
     padding: "20px",
   };
-  const getItems = () => {
+
+  // const getItems = () => {
+  //   return [number, number + 1, number + 2];
+  // };
+
+  const getItems = useCallback(() => {
     return [number, number + 1, number + 2];
-  };
+  }, [number]);
   return (
     <div style={themeStyle}>
       <input
