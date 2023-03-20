@@ -17,3 +17,7 @@ export const Provider = ({ children }) => {
 export const useStore = () => {
   return useContext(Context);
 };
+
+export const useDispatch = () => {
+  return useContext(Context).dispatch;
+};
