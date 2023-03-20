@@ -21,3 +21,9 @@ export const useStore = () => {
 export const useDispatch = () => {
   return useContext(Context).dispatch;
 };
+
+export const useSelector = (callback) => {
+  const { state } = useContext(Context);
+  const store = callback ? callback(state) : state;
+  return store;
+};
