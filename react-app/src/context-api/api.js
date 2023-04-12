@@ -22,6 +22,7 @@ export const useDispatch = () => {
   return useContext(Context).dispatch;
 };
 
+// useSelector hook
 export const useSelector = (callback) => {
   const { state } = useContext(Context);
   const store = callback ? callback(state) : state;
