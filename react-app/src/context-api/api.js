@@ -18,6 +18,7 @@ export const useStore = () => {
   return useContext(Context);
 };
 
+// useDispatch hook
 export const useDispatch = () => {
   return useContext(Context).dispatch;
 };
